@@ -1,0 +1,92 @@
+.orderConfirmedOverall {
+  width: 100vw;
+  min-height: 100vh;
+  max-height: unset;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+.orderConfirmedOverall .finalProductsContainer {
+  width: 400px;
+  min-height: 300px;
+  max-height: unset;
+  background-color: var(--rose50);
+  padding: 1rem;
+}
+
+.headerP {
+  color: var(--rose400);
+  font-size: 14px;
+  padding-top: 0.5rem;
+}
+
+.orderConfirmedOverall .finalProductsContainer .finalProductsProducts {
+  background-color: var(--rose100);
+  margin-top: 1.5rem;
+  padding: 1rem;
+}
+
+.checkoutProductsContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.checkoutProductsContainer .leftPart {
+  display: flex;
+  align-items: center;
+  flex-basis: 50%;
+}
+
+.checkoutProductsContainer .leftPart img {
+  width: 50%;
+}
+
+.numberAndPrice {
+  display: flex;
+  gap: 0 0.5rem;
+}
+
+.numberAndPrice .number {
+  color: var(--red);
+}
+
+.numberAndPrice .price {
+  color: var(--rose500);
+}
+
+.finalPrice {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.finalPrice p {
+  color: var(--rose500);
+  font-size: 14px;
+}
+
+.finalPrice h3 {
+  font-weight: bold;
+}
+
+.orderConfirmedOverall button {
+  width: 100%;
+  background-color: var(--red);
+  color: var(--rose50);
+  text-align: center;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  margin-top: 1rem;
+}

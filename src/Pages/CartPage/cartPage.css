@@ -1,0 +1,102 @@
+:root {
+  --red: hsl(14, 86%, 42%);
+  --green: hsl(159, 69%, 38%);
+
+  --rose50: hsl(20, 50%, 98%);
+  --rose100: hsl(13, 31%, 94%);
+  --rose300: hsl(14, 25%, 72%);
+  --rose400: hsl(7, 20%, 60%);
+  --rose500: hsl(12, 20%, 44%);
+  --rose900: hsl(14, 65%, 9%);
+}
+
+.cartPageOverall {
+  padding: 1rem;
+  background-color: var(--rose50);
+}
+
+.cartPageOverall .header {
+  color: var(--red);
+  margin-bottom: 1rem;
+}
+
+.cartPageOverall .products {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  min-width: 200px;
+  border-bottom: 1px solid var(--rose100);
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.removeFromCart button {
+  border-radius: 50%;
+  padding: 0.2rem;
+  border: 1px solid var(--rose500);
+}
+
+.removeFromCart button:hover {
+  border: 2px solid var(--rose900);
+}
+
+.cartPageOverall .products h3 {
+  color: var(--rose500);
+}
+
+.totalCartPrice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.totalCartPrice p {
+  color: var(--rose500);
+}
+
+.totalCartPrice .totalPrice {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: var(--rose900);
+}
+
+.confirmOrder {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  background-color: var(--red);
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  margin: 2rem 0 0 0;
+  color: var(--rose50);
+}
+
+.confirmOrder:hover {
+  background-color: rgb(144, 32, 32);
+}
+
+.priceAndAmount {
+  display: flex;
+}
+
+.priceAndAmount .numberOfProducts {
+  color: var(--red);
+  padding-right: 1rem;
+}
+
+.priceAndAmount .productPrice {
+  color: var(--rose300);
+  padding-right: 0.5rem;
+}
+
+.priceAndAmount p:last-of-type {
+  color: var(--rose500);
+}
+
+@media (max-width: 700px) {
+  .cartPageOverall {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+}
